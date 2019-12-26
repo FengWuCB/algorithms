@@ -1,10 +1,10 @@
 # 算法与数据结构题目最优解
 
 > 书籍《程序员代码面试指南：IT名企算法与数据结构题目最优解》学习记录
-
+[TOC]
 ## 栈和队列
 
-1. 实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作
+### 1、实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返回栈中最小元素的操作
 
    ```java
    public class MyStack {
@@ -48,8 +48,8 @@
 
    
 
-2. 一个栈依次压入1、2、3、4、5，那么从栈顶到栈底分别为5、4、3、2、1。将这个栈转置后，从栈顶到栈底为 1、2、3、4、5，也就是实现栈中元素的逆序，但是只能用递归函数来实现，不能用其他数据结构
-  
+### 2、一个栈依次压入1、2、3、4、5，那么从栈顶到栈底分别为5、4、3、2、1。将这个栈转置后，从栈顶到栈底为 1、2、3、4、5，也就是实现栈中元素的逆序，但是只能用递归函数来实现，不能用其他数据结构
+
   ```java
   public class ReverseStack {
       public static int getAndRemoveLastElement(Stack<Integer> stack){
@@ -73,10 +73,10 @@
       }
   }
   ```
+
   
-  
-  
-3. 编写一个类，用两个栈实现队列，支持队列的基本操作（add、poll、peek）
+
+### 3、编写一个类，用两个栈实现队列，支持队列的基本操作（add、poll、peek）
 
    ```java
    public class TwoStacksQueue {
@@ -126,7 +126,7 @@
 
 ## 链表
 
-1. 给定两个有序链表的头指针head1和head2，打印两个链表的公共部分
+### 1、给定两个有序链表的头指针head1和head2，打印两个链表的公共部分
 
    ```java
    public static void printCommonPart(Node head1, Node head2){
@@ -145,7 +145,7 @@
        }
    ```
 
-2. 反转单链表
+### 2、反转单链表
 
    ```java
    public static Node reverseList(Node head){
@@ -163,7 +163,7 @@
 
    
 
-3. 反转双链表
+### 3、反转双链表
 
    ```java
    public static DoubleNode reverseList(DoubleNode head){
@@ -182,7 +182,7 @@
 
    
 
-4. 单链表中删除指定值的节点
+### 4、单链表中删除指定值的节点
 
    ```java
    		/**
@@ -241,7 +241,7 @@
 
    
 
-5. 删除无序单链表中重复出现的节点
+### 5、删除无序单链表中重复出现的节点
 
    ```java
    		/**
@@ -274,7 +274,7 @@
 
 ## 二叉树
 
-1. 二叉树遍历
+### 1、二叉树遍历
 
    ```java
    		/**
@@ -319,7 +319,7 @@
 
 ## 字符串问题
 
-1. 判断两个字符串是否互为变形词
+### 1、判断两个字符串是否互为变形词
 
    ```java
    public static boolean isDeformation(String str1, String str2){
