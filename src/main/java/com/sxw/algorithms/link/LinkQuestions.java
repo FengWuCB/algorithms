@@ -1,8 +1,6 @@
 package com.sxw.algorithms.link;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @author 苏雄伟 [suxiongwei@kaoshixing.com]
@@ -143,7 +141,15 @@ public class LinkQuestions {
         }
     }
 
-
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        ArrayList<Integer> result = new ArrayList();
+        ListNode tmp = listNode;
+        while (tmp != null){
+            result.add(0, tmp.val);
+            tmp = tmp.next;
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
 
